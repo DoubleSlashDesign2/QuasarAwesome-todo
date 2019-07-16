@@ -1,8 +1,14 @@
 # Quasar App
+https://quasar.dev/quasar-cli/installation
+
+npm install or npm update
+npm install yarn
+yarn --version
 Quasar dev  to executein browser
 > WIP
 
 https://medium.com/coinmonks/everything-you-wanted-to
+https://stackoverflow.com/questions/50328324/how-do-i-fix-a-vulnerable-npm-package-in-my-package-lock-json-that-isnt-listed
 
 in  package-lock.json
 change
