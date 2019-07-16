@@ -90,8 +90,11 @@ export default {
   },
     mounted()  {
     console.log("mounted")
-    console.log(this.$refs)
-    this.$refs.messageImport.className='bg-green'
+
+    // dont use when there is reactive data
+    // you should use for fom validations and autofocus type things
+    console.log(this.$refs)    
+    this.$refs.messageImport.className='bg-green' 
   },
     beforeUpdate()  {
     console.log("beforeUpdate")
