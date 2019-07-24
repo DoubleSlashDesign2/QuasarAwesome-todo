@@ -7,6 +7,9 @@ yarn --version
 Quasar dev  to executein browser
 > WIP
 
+add support for scss
+npm install --save-dev sass-loader node-sass
+
 https://medium.com/coinmonks/everything-you-wanted-to
 https://stackoverflow.com/questions/50328324/how-do-i-fix-a-vulnerable-npm-package-in-my-package-lock-json-that-isnt-listed
 

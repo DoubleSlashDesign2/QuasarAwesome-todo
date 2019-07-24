@@ -24,7 +24,13 @@
       </q-tabs>
     </q-footer>
 
-    <q-drawer v-model="leftDrawerOpen" :breakpoint="767" bordered content-class="bg-grey-2">
+    <q-drawer
+      v-model="leftDrawerOpen"
+      :breakpoint="767"
+      :width="250"
+      bordered
+      content-class="bg-grey-2"
+    >
       <q-list>
         <q-item-label header>Navigation</q-item-label>
         <q-item v-for="nav in navs" :key="nav.label" clickable exact :to="nav.to">
@@ -36,16 +42,6 @@
             <q-item-label caption>quasar.dev</q-item-label>
           </q-item-section>
         </q-item>
-
-        <!-- <q-item clickable exact to="/settings">
-          <q-item-section avatar>
-            <q-icon name="settings" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Settings</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>-->
       </q-list>
     </q-drawer>
 
@@ -83,10 +79,16 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @media screen and (min-width: 768px) {
   .q-footer {
     display: none;
+  }
+}
+
+.q-drawer {
+  .q-router-link--exact-active {
+    color: red !important;
   }
 }
 </style>

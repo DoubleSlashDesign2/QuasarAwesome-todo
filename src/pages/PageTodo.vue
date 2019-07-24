@@ -5,9 +5,26 @@
 <script>
 //import Task from "components/Task.vue";
 export default {
-  // data() {
-  //   return {
-  // }
+  data() {
+    return {
+      tasks:[
+        {
+          id: 1,
+          name: 'Got to Shop',
+          completer: false
+        },
+                {
+          id: 2,
+          name: 'Get bananas',
+          completer: false
+        },
+                {
+          id: 3,
+          name: 'Get Apples',
+          completer: false
+        }
+      ]
+  }
   // methods: {
   //   deleteTask(index) {
   //     this.tasks.splice(index, 1);
