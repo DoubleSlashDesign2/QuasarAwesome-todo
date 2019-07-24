@@ -49,8 +49,6 @@ module.exports = function (ctx) {
         'QTabs',
         'QTab',
         'QRouteTab'
-
-
       ],
 
       directives: [
