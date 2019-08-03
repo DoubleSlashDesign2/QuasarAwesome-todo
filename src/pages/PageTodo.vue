@@ -1,39 +1,33 @@
 <template padding>
-  <q-page padding>Todo page</q-page>
+  <q-page class="q-pa-md">
+    <q-list bordered separator>
+
+			<task
+				v-for="(task, key) in tasks"
+		  	:key="key"
+		  	:task="task"
+		  	:id="key"></task>
+     
+    </q-list>
+  </q-page>
 </template>
 
 <script>
 //import Task from "components/Task.vue";
+import { mapGetters } from "vuex";
+
 export default {
-  data() {
-    return {
-      tasks:[
-        {
-          id: 1,
-          name: 'Got to Shop',
-          completer: false
-        },
-                {
-          id: 2,
-          name: 'Get bananas',
-          completer: false
-        },
-                {
-          id: 3,
-          name: 'Get Apples',
-          completer: false
-        }
-      ]
+  computed: {
+    ...mapGetters('tasks', ['tasks'])
+  },
+  components: {
+    'task': require("components/Tasks/Task.vue").default
   }
   // methods: {
   //   deleteTask(index) {
   //     this.tasks.splice(index, 1);
   //   }
   // },
-  // components: {
-  //   //task: Task
-  //   task: require("components/Task.vue").default
-  // }
 };
 </script>
 
